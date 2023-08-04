@@ -1,0 +1,16 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    username: root
+    password: 195318
+    url: jdbc:mysql://localhost:3306/banktest?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8#?serverTimezone=Asia/Shanghai
+
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
